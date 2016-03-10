@@ -1,3 +1,5 @@
+# pip install openpyxl
+
 import openpyxl
 import random
 import string
@@ -77,7 +79,7 @@ for i in range(2, toc.max_row + 1):
             elif type == 'Numerator':
                 content += open(inDir+'numerator.html').read().format(uid()) #TODO: Replace with real UID
             elif type == 'DE':
-                 content += open(comboDir+code+'.html').read().format(uid()) #TODO: Replace with real Data Element and Disagg.
+                 content += open(comboDir+code.replace('/','-')+'.html').read().format(uid()) #TODO: Replace with real Data Element and Disagg.
             elif type == 'Subtotal':
                 content += open(inDir+'subtotal.html').read().format(uid()) #TODO: Replace with real UID
             elif type != "END":
@@ -86,7 +88,13 @@ for i in range(2, toc.max_row + 1):
                 vtab_body +\
                 '</div>\n'
         formFile = open(outDir+datasetName+'.html', 'w')
-        formFile.write('<html>\n<body>\n' + form + '\n</body>\n</html>\n')
+        formFile.write('<html>\n<head>\n' +\
+                       '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>\n' + \
+                       '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">\n' + \
+                       '<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css">\n' + \
+                       '<script type="text/javascript" src="https://dhis2-cdn.org/v215/ext/ext-all.js"></script>\n' + \
+                       '<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>\n' + \
+                       '</head>\n<body>\n' + form + '\n</body>\n</html>\n')
         formFile.close()
         export.write(escape(form))
         export.write('			</htmlCode>\n' + \
