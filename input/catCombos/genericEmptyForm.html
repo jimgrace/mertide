@@ -1,0 +1,679 @@
+<style type="text/css">.PEPFAR_Form{
+font-family: LiberationSans,arial,sans-serif;
+width 100%;
+font-size: 13px;
+text-align: left;
+border:1px solid #cccccc;
+}
+.PEPFAR_Form_Container{
+clear:both;
+line-height: 140%;
+display:flex;
+border-bottom:1px solid #cccccc;
+}
+.PEPFAR_Form span{
+line-height: 140%;
+}
+.PEPFAR_Form_Title{
+background-color: #1f497d;
+color: #ffffff;
+font-weight: bold;
+padding: 12px;
+margin-bottom:1px;
+background-size: 18px;/*MY*/
+cursor: pointer;/*MY*/
+font-family: FontAwesome;
+}
+
+
+.PEPFAR_Form_Title_Quarterly{
+background-color: #64AB23;
+color: #ffffff;
+font-weight: bold;
+padding: 12px;
+margin-bottom:1px;
+background-size: 18px;/*MY*/
+cursor: pointer;/*MY*/
+font-family: FontAwesome;
+}
+.PEPFAR_reporting_legend {
+text-align:right;
+display:block;
+margin:10px
+}
+.PEPFAR_Form_Title_Quarterly:hover
+{
+    background-color:#7AD12B; text-decoration:none;
+}
+.PEPFAR_quarterly_square {
+font-size:2em;
+color:#64AB23;
+}
+.PEPFAR_Form_Title_Semiannually{
+background-color: #DF8500;
+color: #ffffff;
+font-weight: bold;
+padding: 12px;
+margin-bottom:1px;
+background-size: 18px;/*MY*/
+cursor: pointer;/*MY*/
+font-family: FontAwesome;
+}
+.PEPFAR_Form_Title_Semiannually:hover
+{
+    background-color:#FF9800; text-decoration:none;
+}
+.PEPFAR_semiannually_square {
+font-size:2em;
+color:#DF8500;
+}
+.PEPFAR_Form_Title_Annually{
+background-color: #68468F;
+color: #ffffff;
+font-weight: bold;
+padding: 12px;
+margin-bottom:1px;
+background-size: 18px;/*MY*/
+cursor: pointer;/*MY*/
+font-family: FontAwesome;
+}
+.PEPFAR_Form_Title_Annually:hover
+{
+    background-color:#8F60C4; text-decoration:none;
+}
+.PEPFAR_annually_square {
+font-size:2em;
+color:#68468F;
+}
+
+/*MY Begin*/
+.PEPFAR_Form_Title::after{
+content: "\f147   Collapse";
+left: 88%;
+position: absolute;
+color: white;
+}
+.PEPFAR_Form_Title.expanded
+{
+background-size: 18px;
+}
+.PEPFAR_Form_Title.expanded::after{
+content: "\f196   Expand";
+left: 88%;
+position: absolute;
+}
+.PEPFAR_Form_ShowHide {
+background-size: 18px;
+padding: 8px;
+cursor: pointer;
+font-family: FontAwesome;
+}
+.PEPFAR_Form_ShowHide::after{
+content: "\f147   Collapse All";
+left: 1%;
+position: absolute;
+color: #2e6e9e;
+font-size: 14px;
+font-weight: bold;
+}
+.PEPFAR_Form_ShowHide.expanded
+{
+background-size: 18px;
+font-family: FontAwesome;
+}
+.PEPFAR_Form_ShowHide.expanded::after{
+content: "\f196   Expand All";
+left: 1%;
+position: absolute;
+}
+.PEPFAR_Form_Collapse{
+ clear:both;
+line-height: 140%;
+display:block;
+border-bottom:1px solid #cccccc;
+}
+/*MY End*/
+
+.PEPFAR_Form_SubTitle{
+}
+.PEPFAR_Form_Priority{
+color: #ffffff;
+background-color: #1f497d;
+width:50px;
+font-weight: bold;
+text-align:center;
+float:left;
+display:inline;
+padding: 8px;
+min-width:50px;
+max-height:18px;
+}
+.PEPFAR_Form_Priority2{
+color: #ffffff;
+background-color: #0070c0;
+width:50px;
+font-weight: bold;
+text-align:center;
+float:left;
+display:inline;
+padding: 8px;
+min-width:50px;
+max-height:18px;
+}
+.PEPFAR_Form_Priority3{
+color: black;
+background-color: #ccccff;
+width:50px;
+font-weight: bold;
+text-align:center;
+float:left;
+display:inline;
+padding: 8px;
+min-width:50px;
+max-height:18px;
+}
+.PEPFAR_Form_Empty{
+width:4em;
+float:left;
+display:inline;
+padding: 8px;
+text-align:center;
+}
+.PEPFAR_Form_Description{
+color:black;
+padding: 8px;
+display:inline;
+padding: 8px;
+float:left;
+}
+.PEPFAR_Form_Description_b{
+font-weight:bold;
+color:black;
+padding: 8px;
+display:inline;
+float:left;
+}
+.PEPFAR_Form_EntryName{
+float:left;
+width:100px;
+display:inline;
+padding: 8px;
+text-align:right;
+}
+.PEPFAR_Form_EntryName_b{
+float:left;
+width:100px;
+display:inline;
+padding: 8px;
+text-align:right;
+font-weight:bold;
+}
+.PEPFAR_Form_EntryField{
+display:inline;
+padding: 8px;
+float:left;
+width:4em;
+text-align:center;
+}
+.PEPFAR_Form_SubRange_Container{
+background-color: #D6E0F5;
+}
+
+        .ui-tabs-vertical
+        {
+            position: relative; /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+            padding: .2em;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav
+        {
+            margin: 0;
+            padding: .2em .2em 0;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav li
+        {
+            list-style: none;
+            float: left;
+            position: relative;
+            top: 0;
+            margin: 1px .2em 0 0;
+            border-bottom-width: 0;
+            padding: 0;
+            white-space: nowrap;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav .ui-tabs-anchor
+        {
+            float: left;
+            padding: .5em 1em;
+            text-decoration: none;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active
+        {
+            margin-bottom: -1px;
+            padding-bottom: 1px;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+        .ui-tabs-vertical .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+        .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor
+        {
+            cursor: text;
+        }
+
+        .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor
+        {
+            cursor: pointer;
+        }
+
+        .ui-tabs-vertical .ui-tabs-panel
+        {
+            display: block;
+            border-width: 0;
+            padding: 1em 1.4em;
+            background: none;
+        }
+
+/***Customize********/
+        .ui-tabs-vertical
+        {
+            width: 98%;
+            min-width: 55em;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav
+        {
+            padding: .2em .1em .2em .2em;
+            float: left;
+            width: 12em;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav li
+        {
+            clear: left;
+            width: 100%;
+            border-bottom-width: 1px !important;
+            border-right-width: 0 !important;
+            margin: 0 -1px .2em 0;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav li a
+        {
+            display: block;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active
+        {
+            padding-bottom: 0;
+            padding-right: .1em;
+            border-right-width: 1px;
+            border-right-width: 1px;
+        }
+
+        .ui-tabs-vertical .ui-tabs-panel
+        {
+            padding: 1em !important;
+            float: right;
+            width: 40em;
+        }
+
+/***Customize********/
+        .ui-tabs .ui-tabs-nav
+        {
+            margin: 0;
+            padding: .2em .2em 0;
+            width: 100%;
+            max-width: 120em;
+        }
+
+        .ui-tabs .ui-tabs-nav li
+        {
+            clear: none;
+            width: auto;
+            list-style: none;
+            float: left;
+            position: relative;
+            top: 0;
+            margin: 1px .2em 0 0;
+            border-bottom-width: 0;
+            padding: 0;
+            white-space: nowrap;
+        }
+        .ui-tabs-vertical .ui-tabs-panel
+        {
+            padding: .2em !important;
+            float: left;
+            width: 80%;
+        }
+        .ui-tabs .ui-tabs-panel
+        {
+            padding: .2em !important;
+            float: left;
+            width: 98%;
+        }
+        .ui-tabs-anchor
+        {
+            width: 100%;
+        }
+        .ui-tabs-vertical .ui-tabs-nav .ui-tabs-anchor
+        {
+            box-sizing: border-box;
+        }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited (
+color:#900;
+}
+</style>
+<script>
+    $(function () {
+        $("#PEPFAR_Tabs_vertical").tabs().addClass("ui-tabs-vertical ui-helper-clearfix").removeClass("ui-tabs");;
+
+        $("#PEPFAR_Tabs_vertical li").removeClass("ui-corner-top").addClass("ui-corner-left");
+        $("[id ^= PEPFAR_Tabs_h]").tabs();
+
+        $('.PEPFAR_Form_Title').click(function (e) {
+            var SH = this.SH ^= 1; // "Simple toggler"
+            $(this).toggleClass("expanded")
+                   .next(".PEPFAR_Form_Collapse").slideToggle();
+        });
+
+        $('.PEPFAR_Form_ShowHide').click(function (e) {
+            var SH = this.SH ^= 1; // "Simple toggler"
+            //$(this).text(SH ? 'Expand All' : 'Collapse All')
+            $(this).toggleClass("expanded");
+            if (SH)
+                $(this).parent().find(".PEPFAR_Form_Title").addClass('expanded')
+                    .next(".PEPFAR_Form_Collapse").slideUp();
+            else
+                $(this).parent().find(".PEPFAR_Form_Title", this.parent).removeClass('expanded')
+                    .next(".PEPFAR_Form_Collapse").slideDown();
+        });
+    });
+  </script>
+<div class="PEPFAR_reporting_legend"><i class="fa fa-square PEPFAR_quarterly_square">&nbsp;</i> <span>Quarterly Reporting</span> <i class="fa fa-square PEPFAR_semiannually_square">&nbsp;</i> <span>Semiannually Reporting</span> <i class="fa fa-square PEPFAR_annually_square">&nbsp;</i> <span>Annually Reporting</span></div>
+
+<div id="PEPFAR_Tabs_vertical">
+<ul>
+	<li><a href="#PEPFAR_Tabs_vertical_1">Generic</a></li>
+</ul>
+
+<div id="PEPFAR_Tabs_vertical_1">
+<div id="PEPFAR_Tabs_h_1">
+<ul>
+	<li><a href="#PEPFAR_Form_Generic_DSD">DSD</a></li>
+	<li><a href="#PEPFAR_Form_Generic_TA">TA-SDI</a></li>
+</ul>
+
+<div id="PEPFAR_Form_Generic_DSD">
+<p class="PEPFAR_Form_ShowHide">&nbsp;</p>
+
+<div class="PEPFAR_Form"><!-- Indicator Title B.-->
+<div class="PEPFAR_Form_Container PEPFAR_Form_Title PEPFAR_Form_Title_Annually">DSD: GEND_GBV</div>
+
+<div class="PEPFAR_Form_Collapse"><!-- Indicator Title E.--><!-- Priority-Description B.-->
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Priority">1</div>
+
+<div class="PEPFAR_Form_Description">Number of people receiving post-GBV care.</div>
+</div>
+<!-- Priority-Description E.--><!-- Disaggregate B.-->
+
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Empty">&nbsp;</div>
+
+<div class="PEPFAR_Form_EntryName">Numerator</div>
+
+<div class="PEPFAR_Form_EntryField"><input id="YpXUnecwj4Z-HllvX50cXC0-val" style="width: 4em; text-align: right;" title="YpXUnecwj4Z - GEND_GBV (N, DSD) TARGET: GBV Care - HllvX50cXC0 - (default) - int" type="text" value="[ GEND_GBV (N, DSD) TARGET: GBV Care (default) ]" /></div>
+</div>
+<!-- Disaggregate E.--><!-- Priority-BoldDescription B.-->
+
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Priority">1</div>
+
+<div class="PEPFAR_Form_Description_b">Disaggregated by Age and Sex</div>
+</div>
+<!-- Priority-BoldDescription E.--><!-- Ranges EntryFields B.-->
+
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Empty">&nbsp;</div>
+
+<div class="PEPFAR_Form_EntryName">Female</div>
+
+<div class="PEPFAR_Form_Range_Container">
+<div class="PEPFAR_Form_EntryField">&lt;10<br />
+<input id="O96tH7jb0OA-VQinSrl0lm0-val" style="width: 4em; text-align: right;" title="O96tH7jb0OA - GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care - VQinSrl0lm0 - (Female, &lt;10) - int" type="text" value="[ GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care (Female, &lt;10) ]" /></div>
+
+<div class="PEPFAR_Form_EntryField">10-14<br />
+<input id="O96tH7jb0OA-OafSyex81QQ-val" style="width: 4em; text-align: right;" title="O96tH7jb0OA - GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care - OafSyex81QQ - (10-14, Female) - int" type="text" value="[ GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care (10-14, Female) ]" /></div>
+
+<div class="PEPFAR_Form_EntryField">15-17<br />
+<input id="O96tH7jb0OA-bT1z76Y7jHj-val" style="width: 4em; text-align: right;" title="O96tH7jb0OA - GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care - bT1z76Y7jHj - (15-17, Female) - int" type="text" value="[ GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care (15-17, Female) ]" /></div>
+
+<div class="PEPFAR_Form_EntryField">18-24<br />
+<input id="O96tH7jb0OA-qATafypkVFm-val" style="width: 4em; text-align: right;" title="O96tH7jb0OA - GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care - qATafypkVFm - (18-24, Female) - int" type="text" value="[ GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care (18-24, Female) ]" /></div>
+
+<div class="PEPFAR_Form_EntryField">25+<br />
+<input id="O96tH7jb0OA-FSCPxiecRxb-val" style="width: 4em; text-align: right;" title="O96tH7jb0OA - GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care - FSCPxiecRxb - (Female, 25+) - int" type="text" value="[ GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care (Female, 25+) ]" /></div>
+</div>
+</div>
+<!-- Ranges EntryFields E.--><!-- Ranges EntryFields B.-->
+
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Empty">&nbsp;</div>
+
+<div class="PEPFAR_Form_EntryName">Male</div>
+
+<div class="PEPFAR_Form_Range_Container">
+<div class="PEPFAR_Form_EntryField">&lt;10<br />
+<input id="O96tH7jb0OA-oiTf1SSlZ1u-val" style="width: 4em; text-align: right;" title="O96tH7jb0OA - GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care - oiTf1SSlZ1u - (Male, &lt;10) - int" type="text" value="[ GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care (Male, &lt;10) ]" /></div>
+
+<div class="PEPFAR_Form_EntryField">10-14<br />
+<input id="O96tH7jb0OA-vCjPAvGIXWP-val" style="width: 4em; text-align: right;" title="O96tH7jb0OA - GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care - vCjPAvGIXWP - (10-14, Male) - int" type="text" value="[ GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care (10-14, Male) ]" /></div>
+
+<div class="PEPFAR_Form_EntryField">15-17<br />
+<input id="O96tH7jb0OA-wlE5BLH3OYu-val" style="width: 4em; text-align: right;" title="O96tH7jb0OA - GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care - wlE5BLH3OYu - (Male, 15-17) - int" type="text" value="[ GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care (Male, 15-17) ]" /></div>
+
+<div class="PEPFAR_Form_EntryField">18-24<br />
+<input id="O96tH7jb0OA-PxxG3Cztl92-val" style="width: 4em; text-align: right;" title="O96tH7jb0OA - GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care - PxxG3Cztl92 - (Male, 18-24) - int" type="text" value="[ GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care (Male, 18-24) ]" /></div>
+
+<div class="PEPFAR_Form_EntryField">25+<br />
+<input id="O96tH7jb0OA-N5HL1hJrv6q-val" style="width: 4em; text-align: right;" title="O96tH7jb0OA - GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care - N5HL1hJrv6q - (Male, 25+) - int" type="text" value="[ GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care (Male, 25+) ]" /></div>
+</div>
+</div>
+<!-- Ranges EntryFields E.--><!-- SubTotal B.-->
+
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Empty">&nbsp;</div>
+
+<div class="PEPFAR_Form_EntryName_b">Sub-total</div>
+
+<div class="PEPFAR_Form_EntryField"><input dataelementid="O96tH7jb0OA" id="totalO96tH7jb0OA" name="total" readonly="readonly" style="width: 4em; text-align: right;" title="GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care" type="text" value="[ GEND_GBV (N, DSD, Age/Sex) TARGET: GBV Care ]" /></div>
+</div>
+<!-- SubTotal E.--><!-- Priority-BoldDescription B.-->
+
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Priority">1</div>
+
+<div class="PEPFAR_Form_Description_b">Disaggregated by Type of Service:</div>
+</div>
+<!-- Priority-BoldDescription E.--><!-- Disaggregate B.-->
+
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Empty">&nbsp;</div>
+
+<div class="PEPFAR_Form_EntryName">Sexual Violence (Post-Rape Care)</div>
+
+<div class="PEPFAR_Form_EntryField"><input id="CZN60d9DutK-OQhUHbwdleC-val" style="width: 4em; text-align: right;" title="CZN60d9DutK - GEND_GBV (N, DSD, ViolenceServiceType) TARGET: GBV Care - OQhUHbwdleC - (Sexual Violence (Post-Rape Care)) - int" type="text" value="[ GEND_GBV (N, DSD, ViolenceServiceType) TARGET: GBV Care (Sexual Violence (Post-Rape Care)) ]" /></div>
+</div>
+<!-- Disaggregate E.--><!-- Disaggregate B.-->
+
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Empty">&nbsp;</div>
+
+<div class="PEPFAR_Form_EntryName">Physical and/or Emotioanl Violence (Other Post GBV Care)</div>
+
+<div class="PEPFAR_Form_EntryField"><input id="CZN60d9DutK-ALlSSgET4IV-val" style="width: 4em; text-align: right;" title="CZN60d9DutK - GEND_GBV (N, DSD, ViolenceServiceType) TARGET: GBV Care - ALlSSgET4IV - (Physical and/or Emotional Violence) - int" type="text" value="[ GEND_GBV (N, DSD, ViolenceServiceType) TARGET: GBV Care (Physical and/or Emotional Violence) ]" /></div>
+</div>
+<!-- Disaggregate E.--><!-- SubTotal B.-->
+
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Empty">&nbsp;</div>
+
+<div class="PEPFAR_Form_EntryName_b">Sub-total</div>
+
+<div class="PEPFAR_Form_EntryField"><input does="" exist="" id="indicatormbregH0mov4" indicator="" indicatorid="mbregH0mov4" name="indicator" not="" readonly="readonly" style="width: 4em; text-align: right;" type="text" /></div>
+</div>
+<!-- SubTotal E.--><!-- Disaggregate B.-->
+
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Empty">&nbsp;</div>
+
+<div class="PEPFAR_Form_EntryName">PEP Service Provision (related to sexual violence services provided)</div>
+
+<div class="PEPFAR_Form_EntryField"><input id="XuW49NlpcLC-HllvX50cXC0-val" style="width: 4em; text-align: right;" title="XuW49NlpcLC - GEND_GBV_PEP (N, DSD) TARGET: GBV PEP - HllvX50cXC0 - (default) - int" type="text" value="[ GEND_GBV_PEP (N, DSD) TARGET: GBV PEP (default) ]" /></div>
+</div>
+<!-- Disaggregate E.--></div>
+</div>
+
+</div>
+
+<div id="PEPFAR_Form_Generic_TA">
+<p class="PEPFAR_Form_ShowHide">&nbsp;</p>
+
+<div class="PEPFAR_Form"><!-- Indicator Title B.-->
+<div class="PEPFAR_Form_Container PEPFAR_Form_Title PEPFAR_Form_Title_Annually">TA-SDI: GEND_GBV</div>
+
+<div class="PEPFAR_Form_Collapse"><!-- Indicator Title E.--><!-- Priority-Description B.-->
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Priority">1</div>
+
+<div class="PEPFAR_Form_Description">Number of people receiving post-GBV care.</div>
+</div>
+<!-- Priority-Description E.--><!-- Disaggregate B.-->
+
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Empty">&nbsp;</div>
+
+<div class="PEPFAR_Form_EntryName">Numerator</div>
+
+<div class="PEPFAR_Form_EntryField"><input id="ZDktRhoNoTD-HllvX50cXC0-val" style="width: 4em; text-align: right;" title="ZDktRhoNoTD - GEND_GBV (N, TA) TARGET: GBV Care - HllvX50cXC0 - (default) - int" type="text" value="[ GEND_GBV (N, TA) TARGET: GBV Care (default) ]" /></div>
+</div>
+<!-- Disaggregate E.--><!-- Priority-BoldDescription B.-->
+
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Priority">1</div>
+
+<div class="PEPFAR_Form_Description_b">Disaggregated by Age and Sex</div>
+</div>
+<!-- Priority-BoldDescription E.--><!-- Ranges EntryFields B.-->
+
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Empty">&nbsp;</div>
+
+<div class="PEPFAR_Form_EntryName">Female</div>
+
+<div class="PEPFAR_Form_Range_Container">
+<div class="PEPFAR_Form_EntryField">&lt;10<br />
+<input id="SSLq417792N-VQinSrl0lm0-val" style="width: 4em; text-align: right;" title="SSLq417792N - GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care - VQinSrl0lm0 - (Female, &lt;10) - int" type="text" value="[ GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care (Female, &lt;10) ]" /></div>
+
+<div class="PEPFAR_Form_EntryField">10-14<br />
+<input id="SSLq417792N-OafSyex81QQ-val" style="width: 4em; text-align: right;" title="SSLq417792N - GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care - OafSyex81QQ - (10-14, Female) - int" type="text" value="[ GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care (10-14, Female) ]" /></div>
+
+<div class="PEPFAR_Form_EntryField">15-17<br />
+<input id="SSLq417792N-bT1z76Y7jHj-val" style="width: 4em; text-align: right;" title="SSLq417792N - GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care - bT1z76Y7jHj - (15-17, Female) - int" type="text" value="[ GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care (15-17, Female) ]" /></div>
+
+<div class="PEPFAR_Form_EntryField">18-24<br />
+<input id="SSLq417792N-qATafypkVFm-val" style="width: 4em; text-align: right;" title="SSLq417792N - GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care - qATafypkVFm - (18-24, Female) - int" type="text" value="[ GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care (18-24, Female) ]" /></div>
+
+<div class="PEPFAR_Form_EntryField">25+<br />
+<input id="SSLq417792N-FSCPxiecRxb-val" style="width: 4em; text-align: right;" title="SSLq417792N - GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care - FSCPxiecRxb - (Female, 25+) - int" type="text" value="[ GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care (Female, 25+) ]" /></div>
+</div>
+</div>
+<!-- Ranges EntryFields E.--><!-- Ranges EntryFields B.-->
+
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Empty">&nbsp;</div>
+
+<div class="PEPFAR_Form_EntryName">Male</div>
+
+<div class="PEPFAR_Form_Range_Container">
+<div class="PEPFAR_Form_EntryField">&lt;10<br />
+<input id="SSLq417792N-oiTf1SSlZ1u-val" style="width: 4em; text-align: right;" title="SSLq417792N - GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care - oiTf1SSlZ1u - (Male, &lt;10) - int" type="text" value="[ GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care (Male, &lt;10) ]" /></div>
+
+<div class="PEPFAR_Form_EntryField">10-14<br />
+<input id="SSLq417792N-vCjPAvGIXWP-val" style="width: 4em; text-align: right;" title="SSLq417792N - GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care - vCjPAvGIXWP - (10-14, Male) - int" type="text" value="[ GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care (10-14, Male) ]" /></div>
+
+<div class="PEPFAR_Form_EntryField">15-17<br />
+<input id="SSLq417792N-wlE5BLH3OYu-val" style="width: 4em; text-align: right;" title="SSLq417792N - GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care - wlE5BLH3OYu - (Male, 15-17) - int" type="text" value="[ GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care (Male, 15-17) ]" /></div>
+
+<div class="PEPFAR_Form_EntryField">18-24<br />
+<input id="SSLq417792N-PxxG3Cztl92-val" style="width: 4em; text-align: right;" title="SSLq417792N - GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care - PxxG3Cztl92 - (Male, 18-24) - int" type="text" value="[ GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care (Male, 18-24) ]" /></div>
+
+<div class="PEPFAR_Form_EntryField">25+<br />
+<input id="SSLq417792N-N5HL1hJrv6q-val" style="width: 4em; text-align: right;" title="SSLq417792N - GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care - N5HL1hJrv6q - (Male, 25+) - int" type="text" value="[ GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care (Male, 25+) ]" /></div>
+</div>
+</div>
+<!-- Ranges EntryFields E.--><!-- SubTotal B.-->
+
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Empty">&nbsp;</div>
+
+<div class="PEPFAR_Form_EntryName_b">Sub-total</div>
+
+<div class="PEPFAR_Form_EntryField"><input dataelementid="SSLq417792N" id="totalSSLq417792N" name="total" readonly="readonly" style="width: 4em; text-align: right;" title="GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care" type="text" value="[ GEND_GBV (N, TA, Age/Sex) TARGET: GBV Care ]" /></div>
+</div>
+<!-- SubTotal E.--><!-- Priority-BoldDescription B.-->
+
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Priority">1</div>
+
+<div class="PEPFAR_Form_Description_b">Disaggregated by Type of Service:</div>
+</div>
+<!-- Priority-BoldDescription E.--><!-- Disaggregate B.-->
+
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Empty">&nbsp;</div>
+
+<div class="PEPFAR_Form_EntryName">Sexual Violence (Post-Rape Care)</div>
+
+<p>&nbsp;</p>
+
+<div class="PEPFAR_Form_EntryField"><input id="JTMBgWJ73Xc-OQhUHbwdleC-val" style="width: 4em; text-align: right;" title="JTMBgWJ73Xc - GEND_GBV (N, TA, ViolenceServiceType) TARGET: GBV Care - OQhUHbwdleC - (Sexual Violence (Post-Rape Care)) - int" type="text" value="[ GEND_GBV (N, TA, ViolenceServiceType) TARGET: GBV Care (Sexual Violence (Post-Rape Care)) ]" /></div>
+</div>
+<!-- Disaggregate E.--><!-- Disaggregate B.-->
+
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Empty">&nbsp;</div>
+
+<div class="PEPFAR_Form_EntryName">Physical and/or Emotional&nbsp;Violence (Other Post GBV Care)</div>
+
+<div class="PEPFAR_Form_EntryField"><input id="JTMBgWJ73Xc-ALlSSgET4IV-val" style="width: 4em; text-align: right;" title="JTMBgWJ73Xc - GEND_GBV (N, TA, ViolenceServiceType) TARGET: GBV Care - ALlSSgET4IV - (Physical and/or Emotional Violence) - int" type="text" value="[ GEND_GBV (N, TA, ViolenceServiceType) TARGET: GBV Care (Physical and/or Emotional Violence) ]" /></div>
+</div>
+<!-- Disaggregate E.--><!-- SubTotal B.-->
+
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Empty">&nbsp;</div>
+
+<div class="PEPFAR_Form_EntryName_b">Sub-total</div>
+
+<div class="PEPFAR_Form_EntryField"><input dataelementid="JTMBgWJ73Xc" id="totalJTMBgWJ73Xc" name="total" readonly="readonly" style="width: 4em; text-align: right;" title="GEND_GBV (N, TA, ViolenceServiceType) TARGET: GBV Care" type="text" value="[ GEND_GBV (N, TA, ViolenceServiceType) TARGET: GBV Care ]" /></div>
+</div>
+<!-- SubTotal E.--><!-- Disaggregate B.-->
+
+<div class="PEPFAR_Form_Container">
+<div class="PEPFAR_Form_Empty">&nbsp;</div>
+
+<div class="PEPFAR_Form_EntryName">PEP Service Provision&nbsp;(related to sexual violence services provided)</div>
+
+<div class="PEPFAR_Form_EntryField"><input id="nijNm0qHCRm-HllvX50cXC0-val" style="width: 4em; text-align: right;" title="nijNm0qHCRm - GEND_GBV_PEP (N, TA) TARGET: GBV PEP - HllvX50cXC0 - (default) - int" type="text" value="[ GEND_GBV_PEP (N, TA) TARGET: GBV PEP (default) ]" /></div>
+</div>
+<!-- Disaggregate E.--></div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+</div>

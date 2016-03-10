@@ -1,0 +1,6 @@
+docs/target
+.DS_Store
+*.iml
+.idea
+secrets.json
+~$*

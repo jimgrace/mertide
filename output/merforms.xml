@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metaData xmlns="http://dhis2.org/schema/dxf/2.0" created="2016-03-09T20:15:01.565+0000">
+	<dataSets>
+		<dataSet code="MER_RESULTS_SUBNAT_FY17" name="MER Results: Facility Based" shortName="MER Results: Facility Based" id="Y6MHCPLn3Ys">
+			<externalAccess>false</externalAccess>
+			<publicAccess>--------</publicAccess>
+			<periodType>Quarterly</periodType>
+			<categoryCombo name="Funding Mechanism" id="wUpfppgjEza">
+			</categoryCombo>
+			<mobile>false</mobile>
+			<version>212</version>
+			<expiryDays>1</expiryDays>
+			<timelyDays>15</timelyDays>
+			<notifyCompletingUser>false</notifyCompletingUser>
+			<approveData>true</approveData>
+			<openFuturePeriods>2</openFuturePeriods>
+			<fieldCombinationRequired>false</fieldCombinationRequired>
+			<validCompleteOnly>true</validCompleteOnly>
+			<noValueRequiresComment>false</noValueRequiresComment>
+			<skipOffline>false</skipOffline>
+			<dataElementDecoration>false</dataElementDecoration>
+			<renderAsTabs>false</renderAsTabs>
+			<renderHorizontally>false</renderHorizontally>
+			<userGroupAccesses>
+				<userGroupAccess>
+					<uid>c6hGi8GEZot</uid>
+					<access>r-------</access>
+					<displayName>Data SI access</displayName>
+					<userGroupUid>c6hGi8GEZot</userGroupUid>
+				</userGroupAccess>
+			</userGroupAccesses>
+			<dataEntryForm>
+				<name>MER Results: Facility Based</name>
+				<style>NORMAL</style>
+				<htmlCode>&lt;style type="text/css"&gt;
+.PEPFAR_Form_Container{
+clear:both;
+line-height: 140%;
+display:flex;
+border-bottom:1px solid #cccccc;
+}
+.PEPFAR_Form span{
+line-height: 140%;
+}
+.PEPFAR_Form_Title{
+background-color: #1f497d;
+color: #ffffff;
+font-weight: bold;
+padding: 12px;
+margin-bottom:1px;
+background-size: 18px;/*MY*/
+cursor: pointer;/*MY*/
+font-family: FontAwesome;
+}
+
+
+.PEPFAR_Form_Title_Quarterly{
+background-color: #64AB23;
+color: #ffffff;
+font-weight: bold;
+padding: 12px;
+margin-bottom:1px;
+background-size: 18px;/*MY*/
+cursor: pointer;/*MY*/
+font-family: FontAwesome;
+}
+.PEPFAR_reporting_legend {
+text-align:right;
+display:block;
+margin:10px
+}
+.PEPFAR_Form_Title_Quarterly:hover
+{
+    background-color:#7AD12B; text-decoration:none;
+}
+.PEPFAR_quarterly_square {
+font-size:2em;
+color:#64AB23;
+}
+.PEPFAR_Form_Title_Semiannually{
+background-color: #DF8500;
+color: #ffffff;
+font-weight: bold;
+padding: 12px;
+margin-bottom:1px;
+background-size: 18px;/*MY*/
+cursor: pointer;/*MY*/
+font-family: FontAwesome;
+}
+.PEPFAR_Form_Title_Semiannually:hover
+{
+    background-color:#FF9800; text-decoration:none;
+}
+.PEPFAR_semiannually_square {
+font-size:2em;
+color:#DF8500;
+}
+.PEPFAR_Form_Title_Annually{
+background-color: #68468F;
+color: #ffffff;
+font-weight: bold;
+padding: 12px;
+margin-bottom:1px;
+background-size: 18px;/*MY*/
+cursor: pointer;/*MY*/
+font-family: FontAwesome;
+}
+.PEPFAR_Form_Title_Annually:hover
+{
+    background-color:#8F60C4; text-decoration:none;
+}
+.PEPFAR_annually_square {
+font-size:2em;
+color:#68468F;
+}
+
+
+/*MY Begin*/
+.PEPFAR_Form_Title::after{
+content: "\\f147   Collapse";
+left: 88%;
+position: absolute;
+color: white;
+}
+.PEPFAR_Form_Title.expanded
+{
+background-size: 18px;
+}
+.PEPFAR_Form_Title.expanded::after{
+content: "\\f196   Expand";
+left: 88%;
+position: absolute;
+}
+.PEPFAR_Form_ShowHide {
+background-size: 18px;
+padding: 8px;
+cursor: pointer;
+font-family: FontAwesome;
+}
+.PEPFAR_Form_ShowHide::after{
+content: "\\f147   Collapse All";
+left: 1%;
+position: absolute;
+color: #2e6e9e;
+font-size: 14px;
+font-weight: bold;
+}
+.PEPFAR_Form_ShowHide.expanded
+{
+background-size: 18px;
+font-family: FontAwesome;
+}
+.PEPFAR_Form_ShowHide.expanded::after{
+content: "\\f196   Expand All";
+left: 1%;
+position: absolute;
+}
+.PEPFAR_Form_Collapse{
+ clear:both;
+line-height: 140%;
+display:block;
+border-bottom:1px solid #cccccc;
+}
+/*MY End*/
+
+.PEPFAR_Form_SubTitle{
+}
+.PEPFAR_Form_Priority{
+color: #ffffff;
+background-color: #1f497d;
+width:100px;
+font-weight: bold;
+text-align:center;
+float:left;
+display:inline;
+padding: 8px;
+min-width:100px;
+max-height:18px;
+}
+.PEPFAR_Form_Priority{
+color: #ffffff;
+background-color: #66a5f4;
+width:100px;
+font-weight: bold;
+text-align:center;
+float:left;
+display:inline;
+padding: 8px;
+min-width:100px;
+max-height:18px;
+}
+.PEPFAR_Form_Priority2{
+color: #ffffff;
+background-color: #0070c0;
+width:50px;
+font-weight: bold;
+text-align:center;
+float:left;
+display:inline;
+padding: 8px;
+min-width:50px;
+max-height:18px;
+}
+.PEPFAR_Form_Priority3{
+color: black;
+background-color: #ccccff;
+width:50px;
+font-weight: bold;
+text-align:center;
+float:left;
+display:inline;
+padding: 8px;
+min-width:50px;
+max-height:18px;
+}
+.PEPFAR_Form_Empty{
+width:4em;
+float:left;
+display:inline;
+padding: 8px;
+text-align:center;
+}
+.PEPFAR_Form_Description{
+color:black;
+padding: 8px;
+display:inline;
+padding: 8px;
+float:left;
+}
+.PEPFAR_Form_Description_b{
+font-weight:bold;
+color:black;
+padding: 8px;
+display:inline;
+float:left;
+}
+.PEPFAR_Form_EntryName{
+float:left;
+width:100px;
+display:inline;
+padding: 8px;
+text-align:right;
+}
+.PEPFAR_Form_EntryName_b{
+float:left;
+width:100px;
+display:inline;
+padding: 8px;
+text-align:right;
+font-weight:bold;
+}
+.PEPFAR_Form_EntryName_Wide{
+float:left;
+width:220px;
+display:inline;
+padding: 8px;
+text-align:right;
+}
+.PEPFAR_Form_EntryField{
+display:inline;
+padding: 8px;
+float:left;
+width:4em;
+text-align:center;
+}
+.PEPFAR_Form_EntryField_b{
+display:inline;
+padding: 8px;
+float:left;
+width:6em;
+text-align:center;
+}
+.PEPFAR_Form_SubRange_Container{
+background-color: #D6E0F5;
+}
+
+        .ui-tabs-vertical
+        {
+            position: relative; /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+            padding: .2em;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav
+        {
+            margin: 0;
+            padding: .2em .2em 0;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav li
+        {
+            list-style: none;
+            float: left;
+            position: relative;
+            top: 0;
+            margin: 1px .2em 0 0;
+            border-bottom-width: 0;
+            padding: 0;
+            white-space: nowrap;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav .ui-tabs-anchor
+        {
+            float: left;
+            padding: .5em 1em;
+            text-decoration: none;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active
+        {
+            margin-bottom: -1px;
+            padding-bottom: 1px;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+        .ui-tabs-vertical .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+        .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor
+        {
+            cursor: text;
+        }
+
+        .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor
+        {
+            cursor: pointer;
+        }
+
+        .ui-tabs-vertical .ui-tabs-panel
+        {
+            display: block;
+            border-width: 0;
+            padding: 1em 1.4em;
+            background: none;
+        }
+
+/***Customize********/
+        .ui-tabs-vertical
+        {
+            width: 98%;
+            min-width: 55em;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav
+        {
+            padding: .2em .1em .2em .2em;
+            float: left;
+            width: 16em;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav li
+        {
+            clear: left;
+            width: 100%;
+            border-bottom-width: 1px !important;
+            border-right-width: 0 !important;
+            margin: 0 -1px .2em 0;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav li a
+        {
+            display: block;
+        }
+
+        .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active
+        {
+            padding-bottom: 0;
+            padding-right: .1em;
+            border-right-width: 1px;
+            border-right-width: 1px;
+        }
+
+        .ui-tabs-vertical .ui-tabs-panel
+        {
+            padding: 1em !important;
+            float: right;
+            width: 40em;
+        }
+
+/***Customize********/
+        .ui-tabs .ui-tabs-nav
+        {
+            margin: 0;
+            padding: .2em .2em 0;
+            width: 100%;
+            max-width: 120em;
+        }
+
+        .ui-tabs .ui-tabs-nav li
+        {
+            clear: none;
+            width: auto;
+            list-style: none;
+            float: left;
+            position: relative;
+            top: 0;
+            margin: 1px .2em 0 0;
+            border-bottom-width: 0;
+            padding: 0;
+            white-space: nowrap;
+        }
+        .ui-tabs-vertical .ui-tabs-panel
+        {
+            padding: .2em !important;
+            float: left;
+            width: 80%;
+        }
+        .ui-tabs .ui-tabs-panel
+        {
+            padding: .2em !important;
+            float: left;
+            width: 98%;
+        }
+        .ui-tabs-anchor
+        {
+            width: 100%;
+        }
+        .ui-tabs-vertical .ui-tabs-nav .ui-tabs-anchor
+        {
+            box-sizing: border-box;
+        }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited (
+color:#900;
+}
+&lt;/style&gt;
+&lt;script&gt;
+    $(function () {
+        $("#PEPFAR_Tabs_vertical").tabs().addClass("ui-tabs-vertical ui-helper-clearfix").removeClass("ui-tabs");;
+
+        $("#PEPFAR_Tabs_vertical li").removeClass("ui-corner-top").addClass("ui-corner-left");
+        $("[id ^= PEPFAR_Tabs_h]").tabs();
+
+        $('.PEPFAR_Form_Title').click(function (e) {
+            var SH = this.SH ^= 1; // "Simple toggler"
+            $(this).toggleClass("expanded")
+                   .next(".PEPFAR_Form_Collapse").slideToggle();
+        });
+
+        $('.PEPFAR_Form_ShowHide').click(function (e) {
+            var SH = this.SH ^= 1; // "Simple toggler"
+            //$(this).text(SH ? 'Expand All' : 'Collapse All')
+            $(this).toggleClass("expanded");
+            if (SH)
+                $(this).parent().find(".PEPFAR_Form_Title").addClass('expanded')
+                    .next(".PEPFAR_Form_Collapse").slideUp();
+            else
+                $(this).parent().find(".PEPFAR_Form_Title", this.parent).removeClass('expanded')
+                    .next(".PEPFAR_Form_Collapse").slideDown();
+        });
+    });
+  &lt;/script&gt;
+&lt;div class="PEPFAR_reporting_legend"&gt;&lt;i class="fa fa-square PEPFAR_quarterly_square"&gt;&amp;nbsp;&lt;/i&gt; &lt;span&gt;Quarterly Reporting&lt;/span&gt; &lt;i class="fa fa-square PEPFAR_semiannually_square"&gt;&amp;nbsp;&lt;/i&gt; &lt;span&gt;Semiannually Reporting&lt;/span&gt; &lt;i class="fa fa-square PEPFAR_annually_square"&gt;&amp;nbsp;&lt;/i&gt; &lt;span&gt;Annually Reporting&lt;/span&gt;&lt;/div&gt;
+&lt;div id="PEPFAR_Tabs_vertical"&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="#PEPFAR_Tabs_vertical_90"&gt;90 = Knowing HIV Status&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#PEPFAR_Tabs_vertical_9090"&gt;90:90 = On ART&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#PEPFAR_Tabs_vertical_909090"&gt;90:90:90 = Viral Suppression&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#PEPFAR_Tabs_vertical_Prevention"&gt;Prevention&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#PEPFAR_Tabs_vertical_HealthSystems"&gt;Health Systems&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div id="PEPFAR_Tabs_vertical_90"&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="#PEPFAR_Form_90_DSD"&gt;DSD&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#PEPFAR_Form_90_TA"&gt;TA-SDI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- HTAB Close --&gt;
+&lt;div id="PEPFAR_Form_90_DSD"&gt;
+&lt;p class="PEPFAR_Form_ShowHide"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;!-- DSD: HTC_TST --&gt;
+&lt;div class="PEPFAR_Form"&gt;&lt;!-- Indicator Title B.--&gt;
+&lt;div class="PEPFAR_Form_Container PEPFAR_Form_Title PEPFAR_Form_Title_Quarterly"&gt;DSD: HTC_TST&lt;/div&gt;
+&lt;div class="PEPFAR_Form_Collapse"&gt;&lt;!-- Indicator Title E.--&gt;&lt;!-- Priority-Description B.--&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Priority"&gt;Required&lt;/div&gt;
+&lt;div class="PEPFAR_Form_Description"&gt;Number of individuals who received HIV Testing and Counseling (HTC) services for HIV and received their test results&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class="PEPFAR_Form_EntryName"&gt;Numerator&lt;/div&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;input id="YT5na62Mzf2-HllvX50cXC0-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Priority"&gt;Conditional&lt;/div&gt;
+&lt;div class="PEPFAR_Form_Description_b"&gt;Disaggregated by Age and Sex Results Received - (Required for all partners in DREAMS SNUs delivering HTS)&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryName"&gt;Under 10&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Range_Container"&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;&amp;lt;1&lt;br /&gt;
+&lt;input id="BF7C2xPaLGe-VJv5d95PH8J-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;1-9&lt;br /&gt;
+&lt;input id="BF7C2xPaLGe-IVBFAjELiBr-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryName"&gt;Female&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Range_Container"&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;10-14&lt;br /&gt;
+&lt;input id="eta6amt6cYL-vJVGpyDiQIE-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;15-19&lt;br /&gt;
+&lt;input id="eta6amt6cYL-NMio44QoXa2-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;20-24&lt;br /&gt;
+&lt;input id="eta6amt6cYL-iJbM0XmXcy3-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;25-49&lt;br /&gt;
+&lt;input id="eta6amt6cYL-MD7ummNwSpv-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;50+&lt;br /&gt;
+&lt;input id="eta6amt6cYL-PUlS4Wg9doJ-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Ranges EntryFields E.--&gt;&lt;!-- Ranges EntryFields B.--&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryName"&gt;Male&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Range_Container"&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;10-14&lt;br /&gt;
+&lt;input id="eta6amt6cYL-PTd25Dw3w1C-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;15-19&lt;br /&gt;
+&lt;input id="eta6amt6cYL-pmbYMHQPJhO-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;20-24&lt;br /&gt;
+&lt;input id="eta6amt6cYL-ImeDNDMtA1B-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;25-49&lt;br /&gt;
+&lt;input id="eta6amt6cYL-yw9GUXoArfi-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;50+&lt;br /&gt;
+&lt;input id="eta6amt6cYL-fwEHTUwtNsS-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class="PEPFAR_Form_EntryName_b"&gt;Sub-total&lt;/div&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;input id="indicatorQYuI8ULJRdz" indicatorid="QYuI8ULJRdz" name="indicator" readonly="readonly" style="width: 4em; text-align: center;" title="" value="" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Priority"&gt;Required&lt;/div&gt;
+&lt;div class="PEPFAR_Form_Description"&gt;Disaggregated by Age/Sex/Result Received (Coarse Disaggregate)&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;b&gt;&amp;lt;15&lt;/b&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div b="" class="PEPFAR_Form_EntryField"&gt;&lt;b&gt;15+&lt;/b&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Ranges EntryFields B.--&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryName"&gt;Female&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Range_Container"&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;input id="yaqjIBJA4hn-Pv51tDz8wHc-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;input id="yaqjIBJA4hn-NxWS31FH6DC-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;br /&gt;
+&amp;nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Ranges EntryFields E.--&gt;&lt;!-- Ranges EntryFields B.--&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryName"&gt;Male&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Range_Container"&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;input id="yaqjIBJA4hn-sGE1IjFYNjF-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;input id="yaqjIBJA4hn-aXiCuDLkhT1-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;br /&gt;
+&amp;nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Ranges EntryFields E.--&gt;&lt;!-- SubTotal B.--&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryName_b"&gt;Sub-total&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;input dataelementid="yaqjIBJA4hn" id="totalyaqjIBJA4hn" name="total" readonly="readonly" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class="PEPFAR_Form_EntryName_b"&gt;Sub-total&lt;/div&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;input id="indicatorQYuI8ULJRdz" indicatorid="QYuI8ULJRdz" name="indicator" readonly="readonly" style="width: 4em; text-align: center;" title="" value="" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;!-- SubTotal E.--&gt;&lt;!-- Priority-BoldDescription B.--&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p class="PEPFAR_Form_ShowHide"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;!-- DSD: OVC_KNOWN --&gt;
+&lt;div class="PEPFAR_Form"&gt;&lt;!-- Indicator Title B.--&gt;
+&lt;div class="PEPFAR_Form_Container PEPFAR_Form_Title PEPFAR_Form_Title_Semiannually"&gt;DSD: OVC_KNOWN&lt;/div&gt;
+&lt;div class="PEPFAR_Form_Collapse"&gt;&lt;!-- Indicator Title E.--&gt;&lt;!-- Priority-Description B.--&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Priority"&gt;Required&lt;/div&gt;
+&lt;div class="PEPFAR_Form_Description"&gt;Number of OVC beneficiaries who know their HIV status and who have self-disclosed HIV status to OVC implementing partners&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class="PEPFAR_Form_EntryName"&gt;Numerator&lt;/div&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;input id="aO2yH1hwgmx-HllvX50cXC0-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Priority"&gt;Required&lt;/div&gt;
+&lt;div class="PEPFAR_Form_Description"&gt;Disaggregated by Age, Sex and HIV Status&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;!-- SubTotal E.--&gt;&lt;!-- Priority-BoldDescription B.--&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- HTAB Close --&gt;
+&lt;div id="PEPFAR_Form_90_TA"&gt;
+&lt;p class="PEPFAR_Form_ShowHide"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;!-- TA-SDI: HTC_TST --&gt;
+&lt;div class="PEPFAR_Form"&gt;&lt;!-- Indicator Title B.--&gt;
+&lt;div class="PEPFAR_Form_Container PEPFAR_Form_Title PEPFAR_Form_Title_Quarterly"&gt;TA-SDI: HTC_TST&lt;/div&gt;
+&lt;div class="PEPFAR_Form_Collapse"&gt;&lt;!-- Indicator Title E.--&gt;&lt;!-- Priority-Description B.--&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Priority"&gt;Required&lt;/div&gt;
+&lt;div class="PEPFAR_Form_Description"&gt;Number of individuals who received HIV Testing and Counseling (HTC) services for HIV and received their test results&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class="PEPFAR_Form_EntryName"&gt;Numerator&lt;/div&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;input id="MsuHJFC0IEm-HllvX50cXC0-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Priority"&gt;Conditional&lt;/div&gt;
+&lt;div class="PEPFAR_Form_Description_b"&gt;Disaggregated by Age and Sex Results Received - (Required for all partners in DREAMS SNUs delivering HTS)&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryName"&gt;Under 10&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Range_Container"&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;&amp;lt;1&lt;br /&gt;
+&lt;input id="BKSMXNPOXf9-VJv5d95PH8J-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;1-9&lt;br /&gt;
+&lt;input id="BKSMXNPOXf9-IVBFAjELiBr-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryName"&gt;Female&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Range_Container"&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;10-14&lt;br /&gt;
+&lt;input id="jYBQaO2Uqxl-vJVGpyDiQIE-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;15-19&lt;br /&gt;
+&lt;input id="jYBQaO2Uqxl-NMio44QoXa2-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;20-24&lt;br /&gt;
+&lt;input id="jYBQaO2Uqxl-iJbM0XmXcy3-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;25-49&lt;br /&gt;
+&lt;input id="jYBQaO2Uqxl-MD7ummNwSpv-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;50+&lt;br /&gt;
+&lt;input id="jYBQaO2Uqxl-PUlS4Wg9doJ-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Ranges EntryFields E.--&gt;&lt;!-- Ranges EntryFields B.--&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryName"&gt;Male&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Range_Container"&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;10-14&lt;br /&gt;
+&lt;input id="jYBQaO2Uqxl-PTd25Dw3w1C-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;15-19&lt;br /&gt;
+&lt;input id="jYBQaO2Uqxl-pmbYMHQPJhO-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;20-24&lt;br /&gt;
+&lt;input id="jYBQaO2Uqxl-ImeDNDMtA1B-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;25-49&lt;br /&gt;
+&lt;input id="jYBQaO2Uqxl-yw9GUXoArfi-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;50+&lt;br /&gt;
+&lt;input id="jYBQaO2Uqxl-fwEHTUwtNsS-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class="PEPFAR_Form_EntryName_b"&gt;Sub-total&lt;/div&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;input id="indicatorQYuI8ULJRdz" indicatorid="QYuI8ULJRdz" name="indicator" readonly="readonly" style="width: 4em; text-align: center;" title="" value="" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Priority"&gt;Required&lt;/div&gt;
+&lt;div class="PEPFAR_Form_Description"&gt;Disaggregated by Age/Sex/Result Received (Coarse Disaggregate)&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;b&gt;&amp;lt;15&lt;/b&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div b="" class="PEPFAR_Form_EntryField"&gt;&lt;b&gt;15+&lt;/b&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Ranges EntryFields B.--&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryName"&gt;Female&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Range_Container"&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;input id="CA044NohDSU-Pv51tDz8wHc-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;input id="CA044NohDSU-NxWS31FH6DC-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;br /&gt;
+&amp;nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Ranges EntryFields E.--&gt;&lt;!-- Ranges EntryFields B.--&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryName"&gt;Male&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Range_Container"&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;input id="CA044NohDSU-sGE1IjFYNjF-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;input id="CA044NohDSU-aXiCuDLkhT1-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;br /&gt;
+&amp;nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Ranges EntryFields E.--&gt;&lt;!-- SubTotal B.--&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryName_b"&gt;Sub-total&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;input dataelementid="CA044NohDSU" id="totalCA044NohDSU" name="total" readonly="readonly" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class="PEPFAR_Form_EntryName_b"&gt;Sub-total&lt;/div&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;input id="indicatorQYuI8ULJRdz" indicatorid="QYuI8ULJRdz" name="indicator" readonly="readonly" style="width: 4em; text-align: center;" title="" value="" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;!-- SubTotal E.--&gt;&lt;!-- Priority-BoldDescription B.--&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p class="PEPFAR_Form_ShowHide"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;!-- None --&gt;
+&lt;div class="PEPFAR_Form"&gt;&lt;!-- Indicator Title B.--&gt;
+&lt;div class="PEPFAR_Form_Container PEPFAR_Form_Title PEPFAR_Form_Title_None"&gt;None&lt;/div&gt;
+&lt;div class="PEPFAR_Form_Collapse"&gt;&lt;!-- Indicator Title E.--&gt;&lt;!-- Priority-Description B.--&gt;
+
+&lt;/div&gt;
+&lt;!-- SubTotal E.--&gt;&lt;!-- Priority-BoldDescription B.--&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p class="PEPFAR_Form_ShowHide"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;!-- TA-SDI: OVC_KNOWN --&gt;
+&lt;div class="PEPFAR_Form"&gt;&lt;!-- Indicator Title B.--&gt;
+&lt;div class="PEPFAR_Form_Container PEPFAR_Form_Title PEPFAR_Form_Title_Semiannually"&gt;TA-SDI: OVC_KNOWN&lt;/div&gt;
+&lt;div class="PEPFAR_Form_Collapse"&gt;&lt;!-- Indicator Title E.--&gt;&lt;!-- Priority-Description B.--&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Priority"&gt;Required&lt;/div&gt;
+&lt;div class="PEPFAR_Form_Description"&gt;Number of OVC beneficiaries who know their HIV status and who have self-disclosed HIV status to OVC implementing partners&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class="PEPFAR_Form_EntryName"&gt;Numerator&lt;/div&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;input id="ZKd3o94AI2b-HllvX50cXC0-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Priority"&gt;Required&lt;/div&gt;
+&lt;div class="PEPFAR_Form_Description"&gt;Disaggregated by Age, Sex and HIV Status&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;!-- SubTotal E.--&gt;&lt;!-- Priority-BoldDescription B.--&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+&lt;div id="PEPFAR_Tabs_vertical_9090"&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="#PEPFAR_Form_9090_DSD"&gt;DSD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- HTAB Close --&gt;
+&lt;div id="PEPFAR_Form_9090_DSD"&gt;
+&lt;p class="PEPFAR_Form_ShowHide"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;!-- DSD: HTC_CURR --&gt;
+&lt;div class="PEPFAR_Form"&gt;&lt;!-- Indicator Title B.--&gt;
+&lt;div class="PEPFAR_Form_Container PEPFAR_Form_Title PEPFAR_Form_Title_Quarterly"&gt;DSD: HTC_CURR&lt;/div&gt;
+&lt;div class="PEPFAR_Form_Collapse"&gt;&lt;!-- Indicator Title E.--&gt;&lt;!-- Priority-Description B.--&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Priority"&gt;Required&lt;/div&gt;
+&lt;div class="PEPFAR_Form_Description"&gt;Number of adults and children currently receiving antiretroviral therapy (ART)&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class="PEPFAR_Form_EntryName"&gt;Numerator&lt;/div&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;input id="lI7XeTbbiEN-HllvX50cXC0-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Priority"&gt;Conditional&lt;/div&gt;
+&lt;div class="PEPFAR_Form_Description_b"&gt;Disaggregated by Age and Sex - Required for all partners in DREAMS SNUs Providing Treatment Services&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryName"&gt;Under 10&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Range_Container"&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;&amp;lt;1&lt;br /&gt;
+&lt;input id="riRX7FrwXQq-VJv5d95PH8J-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;1-9&lt;br /&gt;
+&lt;input id="riRX7FrwXQq-IVBFAjELiBr-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryName"&gt;Female&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Range_Container"&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;10-14&lt;br /&gt;
+&lt;input id="WTb1iPl5Ycw-vJVGpyDiQIE-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;15-19&lt;br /&gt;
+&lt;input id="WTb1iPl5Ycw-NMio44QoXa2-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;20-24&lt;br /&gt;
+&lt;input id="WTb1iPl5Ycw-iJbM0XmXcy3-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;25-49&lt;br /&gt;
+&lt;input id="WTb1iPl5Ycw-MD7ummNwSpv-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;50+&lt;br /&gt;
+&lt;input id="WTb1iPl5Ycw-PUlS4Wg9doJ-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Ranges EntryFields E.--&gt;&lt;!-- Ranges EntryFields B.--&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryName"&gt;Male&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Range_Container"&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;10-14&lt;br /&gt;
+&lt;input id="WTb1iPl5Ycw-PTd25Dw3w1C-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;15-19&lt;br /&gt;
+&lt;input id="WTb1iPl5Ycw-pmbYMHQPJhO-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;20-24&lt;br /&gt;
+&lt;input id="WTb1iPl5Ycw-ImeDNDMtA1B-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;25-49&lt;br /&gt;
+&lt;input id="WTb1iPl5Ycw-yw9GUXoArfi-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_EntryField"&gt;50+&lt;br /&gt;
+&lt;input id="WTb1iPl5Ycw-fwEHTUwtNsS-val" style="width: 4em; text-align: center;" title="" type="text" value="" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="PEPFAR_Form_Container"&gt;
+&lt;div class="PEPFAR_Form_Empty"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class="PEPFAR_Form_EntryName_b"&gt;Sub-total&lt;/div&gt;
+&lt;div class="PEPFAR_Form_EntryField"&gt;&lt;input id="indicatorQYuI8ULJRdz" indicatorid="QYuI8ULJRdz" name="indicator" readonly="readonly" style="width: 4em; text-align: center;" title="" value="" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;!-- SubTotal E.--&gt;&lt;!-- Priority-BoldDescription B.--&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+&lt;div id="PEPFAR_Tabs_vertical_909090"&gt;
+&lt;ul&gt;
+&lt;/ul&gt;
+
+
+&lt;div id="PEPFAR_Tabs_vertical_Prevention"&gt;
+&lt;ul&gt;
+&lt;/ul&gt;
+
+
+&lt;div id="PEPFAR_Tabs_vertical_HealthSystems"&gt;
+&lt;ul&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+			</htmlCode>
+		</dataset>
+	</datasets>
+</metadata>

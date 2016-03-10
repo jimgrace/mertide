@@ -1,0 +1,32 @@
+		<dataSet code="{0}" name="{1}" shortName="{2}" id="{3}">
+			<externalAccess>false</externalAccess>
+			<publicAccess>--------</publicAccess>
+			<periodType>Quarterly</periodType>
+			<categoryCombo name="Funding Mechanism" id="wUpfppgjEza">
+			</categoryCombo>
+			<mobile>false</mobile>
+			<version>212</version>
+			<expiryDays>1</expiryDays>
+			<timelyDays>15</timelyDays>
+			<notifyCompletingUser>false</notifyCompletingUser>
+			<approveData>true</approveData>
+			<openFuturePeriods>2</openFuturePeriods>
+			<fieldCombinationRequired>false</fieldCombinationRequired>
+			<validCompleteOnly>true</validCompleteOnly>
+			<noValueRequiresComment>false</noValueRequiresComment>
+			<skipOffline>false</skipOffline>
+			<dataElementDecoration>false</dataElementDecoration>
+			<renderAsTabs>false</renderAsTabs>
+			<renderHorizontally>false</renderHorizontally>
+			<userGroupAccesses>
+				<userGroupAccess>
+					<uid>c6hGi8GEZot</uid>
+					<access>r-------</access>
+					<displayName>Data SI access</displayName>
+					<userGroupUid>c6hGi8GEZot</userGroupUid>
+				</userGroupAccess>
+			</userGroupAccesses>
+			<dataEntryForm>
+				<name>{1}</name>
+				<style>NORMAL</style>
+				<htmlCode>
